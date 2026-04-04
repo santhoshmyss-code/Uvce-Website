@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+            box-sizing: border-box;
+        }
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            height: 400px;
+            overflow: hidden;
+            margin: auto;
+        }
+        .slides {
+            display: none;
+            width: 100%;
+            height: 100%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .content {
+            display: flex;
+            flex-direction: row;
+            padding: 20px;
+            gap: 20px;
+        }
+        .info {
+            flex: 1;
+            max-width: 300px;
+        }
+        .info h2 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        .chair, .chair1 {
+            font-size: 16px;
+            color: #333;
+            font-weight: 300;
+        }
+        .para-container {
+            flex: 2;
+        }
+        .para {
+            border: 2px solid black;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 18px;
+            text-align: justify;
+        }
+        .button-container {
+            margin: 20px;
+            text-align: center;
+        }
+        .btn {
+            padding: 10px 20px;
+            font-size: 14px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 5px;
+        }
+        .btn a {
+            text-decoration: none;
+            color: white;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+        @media (max-width: 768px) {
+            .slideshow-container {
+                height: 250px;
+            }
+            .content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .btn {
+                font-size: 12px;
+                padding: 8px 15px;
+            }
+            .para {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="slideshow-container">
+            <img class="slides" src="image/ec1.jpg" alt="Slide 1">
+            <img class="slides" src="image/ec2.jpg" alt="Slide 2">
+            <img class="slides" src="image/background.jpg" alt="Slide 3">
+            <img class="slides" src="image/img1.jpg" alt="Slide 4">
+        </div>
+
+        <div class="content">
+            <div class="info">
+                <h2>Chairperson</h2>
+                <p class="chair">Dr. H R Ramesh</p>
+                <h2>Contact</h2>
+                <p class="chair1">Office Phone: 080-22961834<br>Monday to Saturday 10.00am - 5.00pm<br>Second & Fourth Saturdays are holidays</p>
+            </div>
+            <div class="para-container">
+                <p class="para">
+                    <strong>Department of Electronics & Communication</strong><br><br>
+                    The Department of Electronics and Computer Science Engineering was established in 1994 under the leadership of Dr. H N. Shivashankar. The department was later bifurcated in 2004 into the Department of Electronics and Communication Engineering and the Department of Computer Science and Engineering. The syllabus is updated regularly to align with industry advancements and new technologies. 
+                    <br><br>
+                    The department offers undergraduate and postgraduate programs in Electronics and Communication. It also runs an evening college to support diploma holders and working students. The department has a strong infrastructure, including laboratories for Communication, Digital Systems, Devices, Microprocessors, VLSI, and Simulation. Many undergraduate students actively publish research papers, enhancing the department's academic reputation.
+                </p>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button class="btn"><a href="#">Time Table</a></button>
+            <button class="btn"><a href="department.html">Back</a></button>
+        </div>
+    </main>
+
+    <script>
+        let slideIndex = 0;
+        function showSlides() {
+            let slides = document.getElementsByClassName("slides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1; }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000);
+        }
+        showSlides();
+    </script>
+</body>
+</html>

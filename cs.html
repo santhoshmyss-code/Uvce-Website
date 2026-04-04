@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+            box-sizing: border-box;
+        }
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            height: 400px;
+            overflow: hidden;
+            margin: auto;
+        }
+        .slides {
+            display: none;
+            width: 100%;
+            height: 100%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .content {
+            display: flex;
+            flex-direction: row;
+            padding: 20px;
+            text-align: left;
+            gap: 20px;
+        }
+        .info {
+            flex: 1;
+            max-width: 300px;
+        }
+        .info h2 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        .chair, .chair1 {
+            font-size: 16px;
+            color: #333;
+            font-weight: 300;
+        }
+        .para-container {
+            flex: 2;
+        }
+        .para {
+            border: 2px solid black;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 18px;
+            text-align: justify;
+        }
+        .button-container {
+            margin: 20px;
+            text-align: center;
+        }
+        .btn {
+            padding: 10px 20px;
+            font-size: 14px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 5px;
+        }
+        .btn a {
+            text-decoration: none;
+            color: white;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+        .cs {
+            font-size: 22px;
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            .slideshow-container {
+                height: 250px;
+            }
+            .content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .btn {
+                font-size: 12px;
+                padding: 8px 15px;
+            }
+            .para {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="slideshow-container">
+            <img class="slides" src="image/cs1.jpg" alt="Slide 1">
+            <img class="slides" src="image/cs2.jpg" alt="Slide 2">
+            <img class="slides" src="image/cs3.jpg" alt="Slide 3">
+            <img class="slides" src="image/cs4.jpg" alt="Slide 4">
+        </div>
+
+        <div class="content">
+            <div class="info">
+                <h2>Chairperson</h2>
+                <p class="chair">Dr. Thriveni J</p>
+                <h2>Contact</h2>
+                <p class="chair1">Office Phone: 080-22961358<br>Monday to Saturday 10.00am - 5.00pm<br>Second & Fourth Saturdays are holidays</p>
+            </div>
+            <div class="para-container">
+                <p class="para">
+                    <strong class="cs">Department Of Computer Science</strong><br><br>
+                    The B.E. course in Computer Science Engineering was started in 1982 by the Department of Electronics and Communication Engineering. The Department of Computer Science and Engineering was established as a separate Department in 2004. The Department includes both Computer Science Engineering and Information Science Engineering, offering both UG & PG courses.
+                    <br><br>
+                    Currently, the Department has two Undergraduate Courses, six Postgraduate Courses, and a Ph.D. Course with over 900 students, 20 full-time research scholars, 15 teaching staff, and 10 non-teaching staff. The Department collaborates with companies and research labs, enabling students to work on projects. The department fosters academic excellence, practical learning, and strong industry connections, ensuring students gain holistic development and career opportunities.
+                </p>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button class="btn"><a href="M.Tech 1st Sem TT CSE Department.pdf">Time Table</a></button>
+            <button class="btn"><a href="department.html">Back</a></button>
+        </div>
+    </main>
+
+    <script>
+        let slideIndex = 0;
+        function showSlides() {
+            let slides = document.getElementsByClassName("slides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1; }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000);
+        }
+        showSlides();
+    </script>
+</body>
+</html>
