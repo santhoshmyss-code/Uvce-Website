@@ -1,0 +1,59 @@
+# 🎓 UVCE College Website
+
+A responsive multi-page college website built using HTML, CSS, and JavaScript. This project focuses on creating a clean, user-friendly interface with interactive components and modern UI design.
+
+---
+
+## 🚀 Features
+
+* 📌 Multi-page website (Home, Department, Gallery, Contact, etc.)
+* 🎨 Interactive UI with sidebar navigation and toggle functionality
+* 🖼️ Image carousel and slideshow for dynamic content display
+* 📱 Fully responsive design using media queries
+* ⚡ Smooth user experience with JavaScript-based interactions
+
+---
+
+## 🛠️ Tech Stack
+
+* HTML5
+* CSS3
+* JavaScript
+
+---
+
+## 💡 Key Highlights
+
+* Designed structured layouts for better usability and navigation
+* Implemented DOM manipulation and event handling using JavaScript
+* Built reusable UI components for consistency across pages
+* Focused on responsive design for mobile and desktop compatibility
+
+---
+
+## 📂 Project Structure
+
+```
+uvce-website/
+│
+├── index.html
+├── department.html
+├── gallery.html
+├── main_style.css
+├── main_script.js
+├── department.css
+├── gallery.css
+├── image/
+```
+
+---
+
+## 🌐 Live Demo
+
+👉 (Add your GitHub Pages link here)
+
+---
+
+## 📌 Author
+
+Santhosh M
