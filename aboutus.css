@@ -26,7 +26,7 @@
         min-height: 100dvh;
         grid-template-columns: auto 1fr;
         color: var(--text-clr);
-        background-image: linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)),url(../image/background.jpg);
+        background-image: linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)),url(./image/background.jpg);
         background-position: center;
         background-size: cover;
         position: relative;
